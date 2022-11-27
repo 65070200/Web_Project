@@ -1,0 +1,491 @@
+@import url('http://fonts.cdnfonts.com/css/d-din?styles=37957');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'D-DIN', sans-serif;;
+    scroll-behavior: smooth;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+header.sticky{
+    padding: 20px 100px;
+    background: #c99200;
+    font-size: 1.2rem;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color:#fff;
+    letter-spacing: 2px;
+    font-weight: 800px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+header ul li a:hover {
+    color: #d4af37;
+}
+.banner{
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: black;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1);
+    z-index: -1;
+}
+.banner #bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://cdn.discordapp.com/attachments/888646099802411063/909668933689286726/main5.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.textbox{
+    max-width: 100%;
+    text-align: center;
+    filter: brightness(1);
+}
+.textbox img{
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+.textbox h2{
+    font-size: 5em;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+/* ABOUT */
+.about{
+    padding: 100px;
+    background-color: #d4af37;
+}
+.row .col .aboutus{
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col{
+    position: relative;
+    width: 47%;
+    font-size: 1.5em;
+}
+.row .col .imgbx{
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height: 100%;
+}
+.row .col .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.rowourmenu{
+    position: relative;
+    background: #080808;
+    height: 25em;
+    overflow: hidden;
+    background: url(https://cdn.discordapp.com/attachments/888646099802411063/909769741944647720/main7.jpg) no-repeat center;
+    background-size: cover;
+}
+.col2{
+    position: absolute;
+    letter-spacing: 0.2em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.col2 h1{
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.2em;
+    margin: 0;
+    color:white;
+    text-shadow: 0 0 10px black;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+.menu{
+    background-color: #141414;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+.menu-item img{
+    margin-top: 50px;
+    width: 25rem;
+    object-fit: cover;
+}
+.menu-item h2{
+    margin-top: 10px;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.menu-item p{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #fff;
+}
+@media (max-width:1800px){
+    .menu-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:1350px){
+    .menu-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:920px){
+    .menu-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-grid > .menu-item{
+        text-align: center;
+    }
+}
+.rowgallery{
+    position: relative;
+    background: #080808;
+    height: 25em;
+    overflow: hidden;
+    background: url(https://cdn.discordapp.com/attachments/888646099802411063/909835743080370196/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.col3{
+    position: absolute;
+    letter-spacing: 0.2em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.col3 h1{
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.2em;
+    margin: 0;
+    color:white;
+    text-shadow: 0 0 10px black;
+}
+.gallery-grid{
+    background-color: #141414;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap:3rem;
+}
+.secgallery{
+    background-color: #141414;
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    padding: 6rem;
+}
+.gallery .gallery-item{
+    max-width: 100%;
+    width: 30rem;
+    height: 25rem;
+    overflow: hidden;
+}
+.gallery .gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+.gallery:hover .gallery-item img{
+    transform: scale(1.2);
+}
+@media (max-width:1280px){
+    .gallery-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:920px){
+    .gallery-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gallery .gallery-item{
+        width: 20rem;
+    }
+}
+
+.seccontact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('https://cdn.discordapp.com/attachments/888646099802411063/909835743080370196/bg.jpg');
+    background-size: cover;
+}
+.seccontact .context{
+    max-width: 800px;
+    text-align: center;
+}
+.seccontact .context h2{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact .contactInfo .box .icons{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact .contactInfo .box .text{
+    display: flex;
+    margin-left: 25px;
+    font-size: 25px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 200;
+}
+.contact .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #d4af37;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputbox input,
+.contactForm .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666;
+}
+.contactForm .inputbox input:focus ~ span,
+.contactForm .inputbox input:valid ~ span,
+.contactForm .inputbox textarea:focus ~ span,
+.contactForm .inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform:  translateY(-20px);
+}
+.contactForm .inputbox input[type="submit"]{
+    width: 100px;
+    background: #d4af37;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 920px){
+    .seccontact{
+        padding: 50px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact .contactInfo{
+        margin-bottom: 40px;
+    }
+    .contact .contactInfo,.contactForm{
+        width: 100%;
+    }
+}
+.copyrighttext{
+    padding: 20px 40px;
+    background-color: #141414;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyrighttext p{
+    color: #fff;
+    font-size: 20px;
+}
+@media (max-width:920px){
+    header,
+    header.sticky{
+        padding:10px 20px;
+    }
+    header .button{
+        display: none;
+    }
+    header .button.active{
+        width: 100%;
+        height: calc(100% - 64px);
+        position: fixed;
+        top: 64px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        opacity: 0.95;
+    }
+    header .button li{
+        margin-left: 0;
+    }
+    header .button li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(https://cdn.discordapp.com/attachments/888646099802411063/910230569193992222/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(https://cdn.discordapp.com/attachments/888646099802411063/910235640157863956/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    .banner .textbox h2{
+        font-size:3em;
+    }
+    .banner .textbox img{
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        position: relative;
+        width: 100%;
+    }
+    .row .col .imgbx{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .row .col .about{
+        padding: 10px;
+        background-color: #d4af37;
+    }
+    .aboutus{
+        color: #fff;
+        font-size: 2.5em;
+        font-weight: 300;
+    }
+}
